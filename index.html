@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather-Forecast</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <div id="loading">
+    </div>
+
+    <div class="main">
+      <div id="content">
+        <h1>Weather-Forecast</h1>
+        <form class="form">
+          <input type="text" class="cityinput" placeholder="Enter city name" />
+          <button type="submit">Search</button>
+        </form>
+
+        <div class="card">
+          <h3 id="location"></h3>
+          <h4 class="emoji"></h4>
+          <p id="temperature"></p>
+          <div class="first">
+            <div class="description">
+              <strong> Description: </strong>
+              <p id="desdisplay" class="para"></p>
+            </div>
+            <div class="humidity">
+                <strong>Humidity:</strong>
+                <p id="humidisplay" class="para"></p>
+            </div>
+          </div>
+
+          <div class="second">
+            <div class="wind">
+                <strong>Wind:</strong>
+                <p id="speeddisplay" class="para"></p>
+            </div>
+            <div class="visiblity">
+                <strong>Visiblity:</strong>
+                <p id="visibilitydisplay" class="para"></p>
+            </div>
+          </div>
+        </div>
+        <h3 id="errors"></h3>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
